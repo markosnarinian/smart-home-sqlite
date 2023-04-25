@@ -1,0 +1,32 @@
+{
+  "database": {
+    "database_name": "smarthome.sqlite"
+  },
+  "server_config": {
+    "host": "192.168.1.111",
+    "port": 50000,
+    "debug_mode": false,
+    "ssl_tls": {
+      "ssl_certification": true,
+      "ssl_context": {
+          "certificate": "./certs/certificate.crt",
+          "private_key": "./certs/private.key"
+      }
+    }
+  },
+  "google": {
+    "client": {
+      "client_id": "HIDDEN",
+      "client_secret": "HIDDEN"
+    },
+    "google_user_content": {
+      "redirect_uri": "HIDDEN"
+    }
+  },
+  "dns": {
+    "checker": {
+      "enabled": true,
+      "delay": 1
+    }
+  }
+}

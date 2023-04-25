@@ -1,0 +1,171 @@
+{
+  "devices": {
+    "username": [
+      {
+        "id": "1",
+        "type": "action.devices.types.LIGHT",
+        "traits": [
+          "action.devices.traits.OnOff"
+        ],
+        "name": {
+          "name": "Smart Light"
+        },
+        "willReportState": false,
+        "deviceInfo": {
+          "manufacturer": "marks-smart-home",
+          "model": "m-narinian-light",
+          "hwVersion": "1.0",
+          "swVersion": "1.0"
+        },
+        "otherDeviceIds": [
+          {
+            "deviceId": "local_device_id"
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "type": "action.devices.types.DOOR",
+        "traits": [
+          "action.devices.traits.LockUnlock"
+        ],
+        "name": {
+          "name": "Smart Door"
+        },
+        "willReportState": false,
+        "deviceInfo": {
+          "manufacturer": "marks-smart-home",
+          "model": "m-narinian-door",
+          "hwVersion": "1.0",
+          "swVersion": "1.0"
+        },
+        "otherDeviceIds": [
+          {
+            "deviceId": "local_device_id"
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "type": "action.devices.types.FAN",
+        "traits": [
+          "action.devices.traits.OnOff",
+          "action.devices.traits.FanSpeed"
+        ],
+        "name": {
+          "name": "Smart fan"
+        },
+        "willReportState": false,
+        "attributes": {
+          "availableFanSpeeds": {
+            "speeds": [
+              {
+                "speed_name": "low",
+                "speed_values": [
+                  {
+                    "speed_synonym": [
+                      "low",
+                      "slow",
+                      "one"
+                    ],
+                    "lang": "en"
+                  }
+                ]
+              },
+              {
+                "speed_name": "medium",
+                "speed_values": [
+                  {
+                    "speed_synonym": [
+                      "medium",
+                      "two"
+                    ],
+                    "lang": "en"
+                  }
+                ]
+              },
+              {
+                "speed_name": "high",
+                "speed_values": [
+                  {
+                    "speed_synonym": [
+                      "high",
+                      "full speed",
+                      "three"
+                    ],
+                    "lang": "en"
+                  }
+                ]
+              }
+            ],
+            "ordered": true
+          },
+          "reversible": true
+        },
+        "deviceInfo": {
+          "manufacturer": "marks-smart-home",
+          "model": "m-narinian-fan",
+          "hwVersion": "1.0",
+          "swVersion": "1.0"
+        },
+        "otherDeviceIds": [
+          {
+            "deviceId": "local_device_id"
+          }
+        ]
+      }
+    ]
+  },
+  "device_states": {
+    "username": {
+      "1": {
+        "on": true,
+        "online": true,
+        "status": "SUCCESS"
+      },
+      "2": {
+        "isLocked": true,
+        "isJammed": false,
+        "online": true,
+        "status": "SUCCESS"
+      },
+      "3": {
+        "status": "SUCCESS",
+        "online": true,
+        "on": true,
+        "currentFanSpeedSetting": "low_key"
+      },
+      "4": {
+        "status": "SUCCESS",
+        "online": true,
+        "on": true,
+        "currentFanSpeedSetting": "low_key"
+      }
+
+    }
+  },
+  "challenge": {
+    "username": {
+      "1": {
+        "challenge_type": null,
+        "desired_challenge_value": null,
+        "commands": []
+      },
+      "2": {
+        "challenge_type": null,
+        "desired_challenge_value": null,
+        "commands": []
+      },
+      "3": {
+        "challenge_type": null,
+        "desired_challenge_value": null,
+        "commands": []
+      },
+      "4": {
+        "challenge_type": null,
+        "desired_challenge_value": null,
+        "commands": []
+      }
+    }
+  }
+}
