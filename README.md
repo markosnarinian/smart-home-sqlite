@@ -1,4 +1,9 @@
 # smart-home-sqlite
+
+# What it does
+You can use this program to create your own smart home devices for use with Google Home & Google Assistant. See https://developers.home.google.com/cloud-to-cloud/project/authorization.
+
+# Directory structure
 The "certs" folder contains the SSL certification required for encryption of the connection between client & server. (Sensitive data have been removed)
 
 The "config" folder contains the basic server configuration and the devices linked to each user account in JSON format. (Sensitive data have been removed)
